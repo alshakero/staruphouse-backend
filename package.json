@@ -1,0 +1,13 @@
+{
+  "name": "@startuphouse/backend",
+  "version": "1.0.0",
+  "description": "Backend knowledge task",
+  "main": "index.js",
+  "author": "Omar Alshaker",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "lowdb": "^1.0.0"
+  }
+}
