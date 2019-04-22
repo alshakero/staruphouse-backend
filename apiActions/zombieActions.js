@@ -3,7 +3,7 @@ const {
     validateZombie,
     validateZombieDeletions,
     validateZombieMutation
-} = require('../validators');
+} = require('./validators');
 const errors = require('./errors');
 
 /**

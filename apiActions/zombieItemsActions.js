@@ -1,5 +1,5 @@
 const DBManager = require('../db');
-const { validateZombieItems, validateZombieItem } = require('../validators');
+const { validateZombieItems, validateZombieItem } = require('./validators');
 const errors = require('./errors');
 
 /**

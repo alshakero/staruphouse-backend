@@ -1,4 +1,4 @@
-const { zombieItems } = require('./db/dbDefaultData');
+const { zombieItems } = require('../db/dbDefaultData');
 const projectedZombieItems = zombieItems.items.map(item => ({
     id: item.id,
     name: item.name
@@ -64,7 +64,7 @@ function validateZombieItem(item, index = 0) {
         return {
             result: false,
             errorName: 'INVALID_ITEM_SCHEME',
-            message: `Zombie item must match { id: Number, name: String }. Check item at index ${index}`,
+            message: `Zombie item must match { id: Number, name: String }. Check item at index ${index}`
         };
     }
     if (
@@ -216,6 +216,7 @@ function validateZombieDeletions(deletedZombies) {
 }
 
 module.exports = {
+    validateZombieName,
     validateZombie,
     validateZombieDeletions,
     validateZombieMutation,
