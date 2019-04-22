@@ -51,13 +51,13 @@ Deletes a zombie's item at the provided index
 To run this app, you need to clone this repository and in its DIR do:
 
 1. `yarn` or `npm i`.
-2. `yarn start`.
+2. `yarn start` or `npm run start`.
 
 The app will listen on port 3000 by default.
 
 ### Testing the solution
 
-To run the tests, assuming you already did `yarn` or `npm`i, all you need to do is to run `yarn test` or `npm run test`.
+To run the tests, assuming you already did `yarn` or `npm i`, all you need to do is to run `yarn test` or `npm run test`.
 
 #### Testing coverage 
 - *Integration tests*: I tested against every supported endpoint disregarding implentation details.
@@ -87,5 +87,4 @@ Due to Zeit limitations; deployments filesystem is not persistent. Which makes t
 Please note that the `/today` endpoint of NBP doesn't work on bank holidays as transfer rates are not updated. I had to use `https://api.nbp.pl/api/exchangerates/tables/C/?format=json` endpoint instead. It returns the latest available exchange rates.
 
 ### License
-
 MIT
