@@ -1,13 +1,23 @@
 {
-  "name": "@startuphouse/backend",
-  "version": "1.0.0",
-  "description": "Backend knowledge task",
-  "main": "index.js",
-  "author": "Omar Alshaker",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "lowdb": "^1.0.0"
-  }
+    "name": "@startuphouse/backend",
+    "version": "1.0.0",
+    "description": "Backend knowledge testing task",
+    "main": "index.js",
+    "author": "Omar Alshaker",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "lowdb": "^1.0.0",
+        "node-fetch": "^2.3.0"
+    },
+    "scripts": {
+        "build-docs": "node tools/generateDocs.js",
+        "test": "mocha",
+        "start": "node index.js --listen"
+    },
+    "devDependencies": {
+        "mocha": "^6.1.4",
+        "supertest": "^4.0.2"
+    }
 }

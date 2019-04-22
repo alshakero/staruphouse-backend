@@ -10,7 +10,14 @@ module.exports = {
             status: 404
         });
     },
-    VALIDATION_ERROR(res, validateResult, status = 402) {
+    ZOMBIE_ITEM_NOT_FOUND(res, index) {
+        this._sendError(res, {
+            error: 'ZOMBIE_ITEM_NOT_FOUND',
+            message: `There is no zombie item under the index ${index}`,
+            status: 404
+        });
+    },
+    VALIDATION_ERROR(res, validateResult, status = 422) {
         this._sendError(res, {
             error: validateResult.errorName,
             message: validateResult.message,

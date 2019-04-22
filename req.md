@@ -27,7 +27,7 @@ On the business card we need to display:
 - name of the zombie
 - the date of establishment
 - item list
-- total value of items in 3 currencies, PLN/EU/EU/USD - values calculated on the backend
+- total value of items in 3 currencies, PLN/EUR/USD - values calculated on the backend
 - application must be hosted, it can be herok/zeit or anything else
 
 What's important?
