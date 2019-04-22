@@ -20,6 +20,14 @@ function createApp() {
         next();
     });
 
+    // serve `/` for elegance
+    expressInstance.get('/', (req, res) => {
+        res.setHeader('Content-Type', 'text/html');
+        res.send(
+            'Please check the project\'s <a href="https://github.com/alshakero/staruphouse-backend">README</a> for API docs.'
+        );
+    });
+
     /* register `zombies` end point actions */
     zombieActionsCreator().forEach(action => {
         expressInstance[action.HTTPVerb](action.route, action.callback);
