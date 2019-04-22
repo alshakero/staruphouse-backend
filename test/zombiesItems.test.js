@@ -12,7 +12,7 @@ function sleep(ms) {
 describe('Items', async () => {
     let app;
     before('Empty the DB before tesing then add a user', async () => {
-        const dbName = path.resolve(__dirname, '..', 'db', 'dbStore.json');
+        const dbName = path.resolve(__dirname, '..', 'DBManager', 'dbStore.json');
         if (fs.existsSync(dbName)) {
             fs.unlinkSync(dbName);
         }

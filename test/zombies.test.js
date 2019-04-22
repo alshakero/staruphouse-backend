@@ -9,12 +9,10 @@ function sleep(ms) {
     return new Promise(r => setTimeout(r, ms));
 }
 
-const DBBackupName = 'dbStore_backup.json';
-
 describe('Zombies', async () => {
     let app;
     before('Empty the DB before tesing', async () => {
-        const dbName = path.resolve(__dirname, '..', 'db', 'dbStore.json');
+        const dbName = path.resolve(__dirname, '..', 'DBManager', 'dbStore.json');
         if (fs.existsSync(dbName)) {
             fs.unlinkSync(dbName);
         }

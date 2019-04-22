@@ -13,7 +13,7 @@ function nicerFloats(float) {
 
 class DBManager {
     constructor() {
-        const path = `./db/dbStore.json`;
+        const path = `./DBManager/dbStore.json`;
         this._adapter = new FileAsync(path);
     }
     /**

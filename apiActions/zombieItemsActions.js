@@ -1,4 +1,4 @@
-const DBManager = require('../db');
+const DBManager = require('../DBManager');
 const { validateZombieItems, validateZombieItem } = require('./validators');
 const errors = require('./errors');
 

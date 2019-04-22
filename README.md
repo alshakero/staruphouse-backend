@@ -59,6 +59,12 @@ The app will listen on port 3000 by default.
 
 To run the tests, assuming you already did `yarn` or `npm`i, all you need to do is to run `yarn test` or `npm run test`.
 
+#### Testing coverage 
+- *Integration tests*: I tested against every supported endpoint disregarding implentation details.
+- *Unit tests*: I tested every validation function in `apiActions/validators.js`. 
+
+I didn't test `DBManager` class because it is tested fairly enough in the integeration tests, especially given the limited time for the project.
+
 ### Technologies used
 
 1. I used [`lowdb`](https://github.com/typicode/lowdb) as database for simplicity.

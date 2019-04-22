@@ -1,4 +1,4 @@
-const { zombieItems } = require('../db/dbDefaultData');
+const { zombieItems } = require('../DBManager/dbDefaultData');
 const projectedZombieItems = zombieItems.items.map(item => ({
     id: item.id,
     name: item.name
