@@ -41,6 +41,8 @@ To run the tests, assuming you already did `yarn` or `npm i`, all you need to do
 
 I didn't test `DBManager` class because it is tested fairly enough in the integeration tests, especially given the limited time for the project.
 
+##### Note: Running the tests resets the DB to its default state. 
+
 ### Technologies used
 
 1. I used [`lowdb`](https://github.com/typicode/lowdb) as database for simplicity.

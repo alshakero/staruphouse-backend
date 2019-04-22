@@ -7,10 +7,18 @@ const H24_IN_MILLSECONDS = 8.64e7;
 const ONE_HOUR_IN_MILLSECONDS = 3.6e6;
 const CURRENCIES_OF_INTEREST = ['EUR', 'USD'];
 
+/**
+ * Trims the float to up to 4 decimal places but keeps it as a float (not a String)
+ * @param {Number} float 
+ * @return {float} the float with 4 decimal places tops
+ */
 function nicerFloats(float) {
     return Number.parseFloat(float.toFixed(4));
 }
 
+/**
+ * This DB class is completey `async`. It can be migrated to any desired DB such as `MongoDB` or `PostgreSQL` without much effort. All in one place. 
+ */
 class DBManager {
     constructor() {
         const path = `./DBManager/dbStore.json`;
@@ -185,7 +193,7 @@ class DBManager {
     /**
      * Mutates and returns a zombie
      * @param {Number} id the zombie id
-     * @param {*} newZombieData you partial object of the new zombie. This works like `Object.assign`. However, you need to pass at least one prop of zombie object
+     * @param {Object} newZombieData your partial object of the new zombie. This works like `Object.assign`. However, you need to pass at least one prop of zombie object
      */
     async updateZombie(id, newZombieData) {
         this._ensureConnected();
