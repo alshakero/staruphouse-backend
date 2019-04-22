@@ -13,7 +13,7 @@
 </p>
 
 <h4 align="center">
-This service serves an API of zombies and their items. All needed CRUD operations are available for both `zombies` and their `items
+This service serves an API of zombies and their items. All needed CRUD operations are available for both <code>zombies</code> and their <code>items</code>
 </h4>
 
 ## Endpoints
