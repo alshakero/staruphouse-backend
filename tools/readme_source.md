@@ -6,7 +6,15 @@
   <br>
 </h1>
 
-<h4 align="center">This service serves an API of zombies and their items. All needed CRUD operations are available for both `zombies` and their `items`</h4>
+<p align="center">
+   <a href="https://travis-ci.org/alshakero/staruphouse-backend">
+    <img src="https://travis-ci.org/alshakero/staruphouse-backend.svg?branch=master">
+  </a>
+</p>
+
+<h4 align="center">
+This service serves an API of zombies and their items. All needed CRUD operations are available for both `zombies` and their `items
+</h4>
 
 ## Endpoints
 
