@@ -9,7 +9,7 @@
         "body-parser": "^1.18.3",
         "express": "^4.16.4",
         "lowdb": "^1.0.0",
-        "node-fetch": "^2.3.0"
+        "node-fetch": "^2.6.1"
     },
     "scripts": {
         "build-docs": "node tools/generateDocs.js",
